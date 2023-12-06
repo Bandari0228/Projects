@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="https://kit.fontawesome.com/d9f4ca54a1.js" crossorigin="anonymous"></script>
+    <style>
+        /* Add your CSS styles here or link an external CSS file */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo">My Portfolio</div>
+            <ul class="navitems">
+                <li><a href="/">Home</a></li>
+                <li><a href="#" onclick="showAbout()">About</a></li>
+                <li><a href="#" onclick="showSkills()">Skills</a></li>
+                <!-- <li><a href="#">Blog</a></li> -->
+                <li><a href="./BANDARI_HARISH_Resume_29-08-2023-22-40-56.pdf" download="RESUME" target="_blank">Resume</a></li>
+            </ul>
+            <div class="links">
+                <a href="https://www.linkedin.com/in/bandari-harish-250b89119/" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/Bandari0228" target="_blank">
+                    <i class="fa-brands fa-square-github"></i>
+                </a>
+                <a href="https://www.facebook.com/harish0228" target="_blank">
+                    <i class="fa-brands fa-square-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/harish_0728/" target="_blank">
+                    <i class="fa-brands fa-square-instagram"></i>
+                </a>
+            </div>
+        </nav>
+
+        <div class="wrapper">
+            <div class="cols cols0">
+                <span class="topline">Hello, My Name is</span>
+                <h1>BANDARI HARISH</h1>
+                <h2>I am a <span class="multitext">Web Developer</span></h2>
+                <p> I can provide clean code and perfect design. I also make the
+                    website more interactive with web animations. I can create responsive designs accessible to all
+                    users, regardless of their device.</p>
+                <div class="btn">
+                    <button onclick="showContactme()">Contact Me</button>
+                </div>
+            </div>
+            <div class="cols cols1">
+                <div class="imgbox">
+                    <!-- <img src="" alt="" id="splash"> -->
+                    <img src="./2.jpg" alt="Error">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="about-popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closeAbout()">&times;</span>
+            <h3>About Me</h3>
+            <p>I am a highly motivated B.Tech (CSE) graduate with a strong passion for web development. I possess skills
+                in Python, R, HTML, CSS, and JavaScript, along with experience in React and WordPress. My eagerness to
+                join a dynamic team and utilize my programming skills to create user-friendly web applications drives
+                me. I am excited to contribute my technical expertise and communication skills to drive innovation.
+                <br><br>
+                I have achieved recognition for the Atal Tinkering Lab project by securing a position in the top 100 for
+                the Smart Ideathon 2023. Fluent in English, Hindi, and Telugu, I am seeking opportunities to grow and
+                make a positive impact.
+            </p>
+            <h3>Projects</h3>
+            <ul>
+                <li><strong>Mini Project:Age Calculator</strong><br>A Web-Page to calculate the age of a
+                    person by taking the date of birth as Input and display the person’s age
+                    <a href="https://calculate-age-by-harish.netlify.app/" target="_blank">Project link</a>
+                </li>
+
+                <li><strong>Major Project:Weather Report</strong><br>A Web App for the Users to see
+                    the Current Weather and Weather Forecast for the next 7 days
+                    <a href="https://weather-report-harish.netlify.app/" target="_blank">Project link</a>
+
+                </li>
+
+                <li>
+                    <strong>Portfolio website </strong> <br>
+                    a website that contains about information about myself and <br> project links<a
+                        href="https://harishbandari.netlify.app/" target="_blank">Project link</a>
+                </li>
+                <li><strong> Atal Tinkering Lab</strong><br>Created a website for Atal Tinkering labs.this website is
+                    used to automate the workflow of Atal in-charges
+                    <a href="https://atal-tinkering.netlify.app/" target="_blank">Project link</a>
+                </li>
+                <li><strong> Atal Tinkering Lab (WordPress)</strong><br>Created a website for Atal Tinkering labs.this
+                    website is used to automate the workflow of Atal in-charges
+                    <a href="https://atal-tinkinering-wordpress.netlify.app/" target="_blank">Project link</a>
+                </li>
+                <li><strong>Young Mentor in Atal Tinkering Lab (Web Development)</strong><br>
+                <li><strong>Internship: Did Internship in Web Development (Smart Knower)</strong></li>
+            </ul>
+
+            <h3>Education</h3>
+            <b>
+                2020-2024 <br></b>
+            Gitam University (Visakhapatnam) <br>
+            B. Tech (CSE) <br>
+            Grade: 75%
+            <b> <br><br>2018-2020 <br></b>
+            Vignan Junior College (Hyderabad) <br>
+            Intermediate (MPC) <br>
+            Grade: 89%
+            <b><br><br>2017-2018<br> </b>
+            Sree Vidyanikethan International School (Hyderabad) <br>
+            Secondary School (X)
+            Grade: 65%
+            <br> <br>
+            <h3> Languages</h3>
+            <ul>
+                <li>English</li>
+                <li>Hindi</li>
+                <li>Telugu</li>
+            </ul>
+
+        </div>
+    </div>
+
+    <div id="skill-popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closeSkills()">&times;</span>
+            <h3>Skills</h3>
+            <h4>Programming Skills</h4>
+            <ul>
+                <li>Python</li>
+                <li>R Programming</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+                <li>React</li>
+                <li>WordPress</li>
+            </ul>
+            <h4>Soft-Skills</h4>
+            <ul>
+                <li>Confident</li>
+                <li>Active Listener</li>
+                <li>Clear Communication</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Contact Me Popup -->
+    <div id="contactme" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closeContactme()">&times;</span>
+
+            <form action="https://formspree.io/f/mjvqkwbz" method="post">
+
+                <div class="form">
+                    <h3 id="cont">Contact Me</h3>
+                    <div>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name">
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div>
+                        <label for="number">Mobile number</label>
+                        <input type="text" id="number" name="number">
+                    </div>
+                    <input type="submit">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function showAbout() {
+            var popup = document.getElementById("about-popup");
+            popup.style.display = "block";
+        }
+
+        function closeAbout() {
+            var popup = document.getElementById("about-popup");
+            popup.style.display = "none";
+        }
+
+        function showSkills() {
+            var popup = document.getElementById("skill-popup");
+            popup.style.display = "block";
+        }
+
+        function closeSkills() {
+            var popup = document.getElementById("skill-popup");
+            popup.style.display = "none";
+        }
+
+        function showContactme() {
+            var popup = document.getElementById("contactme");
+            popup.style.display = "block";
+        }
+
+        function closeContactme() {
+            var popup = document.getElementById("contactme");
+            popup.style.display = "none";
+        }
+    </script>
+</body>
+
+</html>
