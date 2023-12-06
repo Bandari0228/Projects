@@ -1,0 +1,24 @@
+h1{
+    text-align: center;
+}
+
+.card{
+    display: inline-block;
+
+    width: 10%;
+    height: 10%;
+    border-radius:10px;
+    background: linear-gradient(135deg,#34a1ea,#90bafc);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    margin:3%;
+    padding: 3%;
+}
+
+.card:hover{
+    box-shadow: 0 30px 56px 0 rgba(0,0,0,0.2);
+}
+.contanier{
+    font-size: large;
+    font-size: 20px;
+}
