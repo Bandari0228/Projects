@@ -1,0 +1,541 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+/* Default styles */
+img {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  max-width: 100%;
+  border-radius: 10px;
+  margin: 2%;
+}
+
+label {
+  display: block;
+  clear: left;
+  text-align: left;
+  background-color: white;
+  color: black;
+  margin: 20px;
+  margin-left: 0px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+input {
+  display: inline-block;
+  width: 100%;
+  padding: 10px;
+  border-radius: 2px;
+  text-transform: uppercase;
+  background-color: white;
+  color: black;
+  border-top: white;
+  border-left: white;
+  border-right: white;
+  outline: none;
+}
+
+.syllanbus label {
+  display: inline;
+}
+
+select {
+  margin-top: 5%;
+  display: inline-block;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  background-color: white;
+  color: black;
+}
+
+.checkbox {
+  display: inline-block;
+  width: 8%;
+}
+
+.atlschool,
+.sameasprincipal,
+.subscription,
+.Withinthecity,
+.teamleader {
+  display: inline-block;
+}
+
+.add,
+.delete {
+  display: inline-block;
+  width: 5%;
+}
+
+.submit1 {
+  display: inline-block;
+  width: 100px;
+  margin: 10px;
+  margin-top: 50px;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.submit1:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+button {
+  display: inline-block;
+  width: 100px;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid black;
+  cursor: pointer;
+  display: inline-block;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+}
+
+/* Dialog Box Styles */
+.dialog-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.dialog {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  width: 50%;
+  height: 80%;
+  overflow-y: auto;
+}
+
+.dialog-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.dialog-title {
+  display: block;
+  text-transform: uppercase;
+  font-size: 40px;
+  text-align: center;
+  margin: 2%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+hr {
+  border: 1px solid black;
+}
+
+.dialog-content {
+  margin-bottom: 20px;
+}
+
+.dialog-footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.dialog-btn {
+  margin-left: 40%;
+  padding: 8px 16px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  position: fixed;
+  float: right;
+  bottom: 12%;
+}
+
+.dialog-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Navbar Styles */
+
+.navbar {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo p {
+  text-align: center;
+  margin: 5px;
+  text-decoration: none;
+}
+
+.logo img {
+  height: 30px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin-left: 10px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.navbar a {
+  color: white;
+}
+
+.card {
+  padding: 2%;
+  display: inline-block;
+  width: 12%;
+  background-color: #f9f9f9;
+  padding: 2px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.btn1 {
+  width: 100%;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0;
+}
+
+.btn {
+  border: 2px solid black;
+}
+
+.btn:hover {
+  background-color: black;
+  color: white;
+}
+
+.dropdown {
+  margin-top: 10px;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.dropdown-btn {
+  display: block;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  padding: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: left;
+}
+
+.result-item {
+  border: 2px solid black;
+  margin: 1%;
+  padding: 1%;
+  border-radius: 1%;
+  background-color: lightblue;
+}
+
+input {
+  text-transform: none;
+}
+
+.show {
+  margin: 2%;
+  padding: 2%;
+  border: 2px solid #000000;
+  border-radius: 10px;
+  background-color: lightgreen;
+}
+
+.search-button {
+  display: inline-block;
+  width: 5%;
+}
+
+.search-input {
+  display: inline-block;
+  width: 92%;
+}
+
+section {
+  width: 100%;
+  margin-top: 2%;
+  margin-left: 10%;
+}
+
+section img {
+  width: 80%;
+}
+
+.aboutimg img {
+  display: inline;
+  margin: 2%;
+  width: 25%;
+  height: auto;
+  max-height: 400px;
+  max-width: 100%;
+}
+
+.readmore {
+  width: 90%;
+}
+
+.about p {
+  width: 50%;
+}
+
+.about img {
+  float: right;
+  width: 40%;
+  height: 70%;
+  border-radius: 10px;
+  margin: 2%;
+  margin-right: 8%;
+  margin-top: -18%;
+}
+
+.expand {
+  background-color: white;
+  padding: 0;
+  border: none;
+  color: blue;
+  margin-left: -1%;
+}
+
+.expand:hover {
+  background-color: white;
+  padding: 0;
+  border: none;
+  color: black;
+  margin-left: -1%;
+}
+
+.slider {
+  margin-top: -43%;
+  margin-left: 12%;
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.slider-image {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-size: cover;
+  background-position: center;
+  transition: opacity 0.3s ease;
+  transition: transform 0.3s ease;
+}
+
+.slider-image:nth-child(1) {
+  background-image: url(./components/images/ATAL_Brochure_Banner_desktop.jpg);
+  animation: slideAnimation 20s infinite linear;
+  animation-delay: 0s;
+}
+
+@keyframes slideAnimation {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.cards {
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 20%;
+  padding: 10px;
+  margin: 2%;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.cards-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+
+.cards-title {
+  font-size: 18px;
+  color: lightblue;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+}
+
+.cards-description {
+  font-size: 30px;
+  text-align: center;
+}
+
+.cards1 {
+  background-color: lightblue;
+  width: 100%;
+  margin: 0;
+  margin-top: 5%;
+  display: block;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+  img {
+    max-height: 200px;
+  }
+
+  label {
+    font-size: 16px;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  select {
+    width: 100%;
+  }
+
+  .checkbox,
+  .add,
+  .delete {
+    display: none;
+  }
+
+  .submit1 {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .dialog {
+    width: 90%;
+    height: 80%;
+  }
+
+  .dialog-title {
+    font-size: 30px;
+  }
+
+  .navbar {
+    padding: 5px;
+  }
+
+  .logo img {
+    height: 25px;
+    margin-right: 5px;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .btn1 {
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+
+  .dropdown-btn {
+    font-size: 12px;
+  }
+
+  .result-item {
+    font-size: 12px;
+  }
+
+  .search-button {
+    width: 10%;
+  }
+
+  .search-input {
+    width: 80%;
+  }
+
+  section {
+    margin-left: 5%;
+  }
+
+  section img {
+    width: 100%;
+  }
+
+  .aboutimg img {
+    width: 100%;
+  }
+
+  .about p {
+    width: 100%;
+  }
+
+  .about img {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .slider {
+    margin-top: -30%;
+    margin-left: 0;
+  }
+
+  .cards {
+    width: 45%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .cards {
+    width: 100%;
+  }
+}
